@@ -1,0 +1,169 @@
+/*Menu level*/
+#all_categories {
+	padding: 0
+}
+#mnu_bot {
+	background: #e8e8e8;
+}
+#mnu_bot > ul > li {
+	float: left;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+#mnu_bot .cate_icon {   
+    float: left;
+	width: 45px;
+	background-color: #FFFFFF;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+	z-index: 2;
+	margin: 5px 5px 0 8px;
+	overflow:hidden;
+	text-align:center;
+	position: relative;
+}
+.cate_icon img {
+	position: relative;
+	max-width: 100%;
+	margin-top: 5px;
+}
+#mnu_bot > ul > li:hover .icon_cate img {
+	top:-24px;
+}
+#mnu_bot a {
+	display: block;
+	padding: 10px;
+	position: relative;
+	font-size: 1.1em;
+	color: #333333;
+	text-decoration: none;
+	border-bottom: 1px solid #CCCCCC;
+	background: #fafafa
+}
+#mnu_bot a:hover {
+	color: #133b00;
+	text-decoration: underline
+}
+#mnu_bot > ul > li:hover > a {
+	color: #FFFFFF
+}
+#mnu_bot ul ul {
+	display: none;
+	clear: both;
+}
+#mnu_bot ul ul a {
+	padding-left: 30px;
+	background: #FFFFFF url(../Images/arr_orange.png) 20px 17px no-repeat;
+}
+#mnu_bot ul ul ul a {
+	padding-left: 47px;
+	background: #FFFFFF url(../Images/arr_l.png) 35px 17px no-repeat;
+}
+#mnu_bot > ul > li:hover > a {
+	background-color: #df1f26
+	color: #FFFFFF;
+	text-decoration: none
+}
+#mnu_bot > ul > li:nth-child(1):hover > a {
+background-color: #df1f26
+}
+#mnu_bot > ul > li:nth-child(2):hover > a {
+background-color: #ca248e
+}
+#mnu_bot > ul > li:nth-child(3):hover > a {
+background-color: #9bb342
+}
+#mnu_bot > ul > li:nth-child(4):hover > a {
+background-color: #a44d4c
+}
+#mnu_bot > ul > li:nth-child(5):hover > a {
+background-color: #7c8a50
+}
+#mnu_bot > ul > li:nth-child(6):hover > a {
+background-color: #5d3380
+}
+#mnu_bot > ul > li:nth-child(7):hover > a {
+background-color: #0090c9
+}
+#mnu_bot > ul > li:nth-child(8):hover > a {
+background-color: #000000
+}
+#mnu_bot > ul > li:nth-child(9):hover > a {
+background-color: #a44d4c
+}
+#mnu_bot > ul > li:nth-child(10):hover > a {
+background-color: #0090c9
+}
+/*Menu Arcordion*/
+#mnu_bot > ul > li > ul {
+	padding-left:0px;
+	display:none;
+	margin-top:0px;
+}
+#mnu_bot > ul > li.active ul {
+	display:block;
+}
+#mnu_bot > ul > li > ul > li {
+	position: relative;
+}
+#mnu_bot > ul > li span:hover {
+	cursor:pointer;
+}
+#mnu_bot > ul > li.active a + ul {
+	display: block;
+}
+#mnu_bot > ul > li ul > li.active > a, #mnu_bot > ul > li ul > li.active > a {
+	font-weight:normal;
+	color:#3b2c26;
+}
+#mnu_bot > ul > li > span.close {
+	background:url(../Images/faq1.png) 9px 12px no-repeat;
+	width:24px;
+	height:40px;
+	float:right;
+	display:block;
+	margin-right:5px
+}
+#mnu_bot > ul > li > span.close.expanded {
+	background-position: 4px -74px
+}
+#mnu_bot li li span.close {
+	background:url(../Images/faq1.png) 9px 16px no-repeat;
+	width:24px;
+	height:40px;
+	float:right;
+	margin-right:5px;
+	display:block;
+}
+#mnu_bot > ul > li:hover > span.close {
+	background-position: -16px 13px
+}
+#mnu_bot > ul > li:hover > span.close.expanded {
+	background-position: -20px -72px
+}
+#mnu_bot li.active > span.close {
+	background-position: 4px -74px;
+}
+#mnu_bot li li span.close.collapsed {
+	background-position: 9px 14px
+}
+#mnu_bot li span.close.expanded {
+	background-position: 3px -74px
+}
+#mnu_bot > ul > li span.close:hover {
+	cursor:pointer;
+}
+#mnu_bot .close {
+	position:absolute;
+	top:0;
+	right:0px;
+}
+#mnu_bot ul ul .close {
+	position:absolute;
+	top:0px;
+	right:0px;
+}

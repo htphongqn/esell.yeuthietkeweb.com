@@ -1,0 +1,102 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master-payment.master.cs"
+    Inherits="MVC_Kutun.Master.Master_payment" %>
+
+<%@ Register Src="../UIs/hotlinefix.ascx" TagName="hotlinefix" TagPrefix="uc1" %>
+<%@ Register Src="../UIs/cart.ascx" TagName="cart" TagPrefix="uc2" %>
+<%@ Register Src="../UIs/ucAddressPayment.ascx" TagName="ucAddressPayment" TagPrefix="uc3" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
+<head runat="server">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../vi-vn/modalbox/login_popup.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../vi-vn/Styles/template.css" type="text/css" />
+    <!--Main Menu-->
+    <link href="../vi-vn/Styles/newheadfooter.css" rel="stylesheet" type="text/css" />
+    <!--Nivo Slider Responsive-->
+    <link rel="stylesheet" href="../vi-vn/Styles/nivo-slider.css" type="text/css" media="screen" />
+    <meta name="google-site-verification" content="Tal9_rgUcOU4ssBbyfUqvQ85_P404SB6v9VLqsicaMQ" />
+<link rel="alternate" hreflang="vi-vn" href="alternateURL">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <script type="text/javascript" src="../vi-vn/Scripts/jquery-1.8.3.min.js"></script>
+    <div>
+        <!--#begin Header-->
+        <div id="header">
+            <div class="wrap">
+                <a href="/" id="logo" class="fl">
+                    <asp:Image ID="Imag_logo" runat="server" />
+                </a>
+                <div id="header_r" class="fr">
+                    <link rel="Stylesheet" type="text/css" href="../vi-vn/Styles/process_payment.css" />
+                    <div class="progress-bar current-step-1">
+                        <asp:ContentPlaceHolder ID="Ctimg" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--#end Header-->
+        <div class="wrap shadow">
+            <div class="wrap_inner cf">
+                <!--Main Content-->
+                <div id="main" class="cf">
+                    <!--Step 1-->
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <!--Step 1-->
+                    <!--Mini Cart-->
+                    <div id="mini_cart" class="fr">
+                        <uc2:cart ID="cart1" runat="server" />
+                    </div>
+                    <!--end Mini Cart-->
+                    <uc3:ucAddressPayment ID="ucAddressPayment1" runat="server" />
+                </div>
+                <!--End Main Content-->
+                <!--Footer-->
+                <div id="footer_process" class="cf">
+                    <div class="fl">
+                        Bạn cần hỗ trợ? Gọi Hotline <strong>
+                            <uc1:hotlinefix ID="hotlinefix1" runat="server" />
+                        </strong>
+                    </div>
+                    <div class="fr" style="text-align: right">
+                        <div id="copyright">
+                            Copyright © 2011-2015 by Thangnhom.Org. All rights reserved. Designed by <a href="http://yeuthietkeweb.com/"
+                                target="_blank" style="color: Blue">yeuthietkeweb.com.</a></div>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="Lbadddevice_Click" Style="color: #293391">Chuyển sang sử dụng phiên bản mobile</asp:LinkButton>
+                    </div>
+                </div>
+                <!--end Footer-->
+            </div>
+        </div>
+        <!-- End wrap-->
+        <!-- back to top -->
+        <script  type="text/javascript" src="../vi-vn/Scripts/scrolltopcontrol.js"></script>
+        <div id="toTop">
+        </div>
+        <!--Slide Banner-->
+        <script  type="text/javascript" src="../vi-vn/Scripts/jquery.nivo.slider.pack.js"></script>
+        <!--Carousel Assets-->
+        <script  type="text/javascript" src="../vi-vn/Scripts/jquery.carouFredSel-5.6.0-packed.js"></script>
+        <script  type="text/javascript" src="../vi-vn/Scripts/all_scripts.js"></script>
+    </div>
+    <script  type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63537231-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    </form>
+</body>
+</html>

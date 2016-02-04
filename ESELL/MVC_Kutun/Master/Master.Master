@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="MVC_Kutun.Master.Master" %>
+<%@ Register Src="../UIs/top-page.ascx" TagName="top" TagPrefix="uc1" %>
+<%@ Register Src="../UIs/support.ascx" TagName="support" TagPrefix="uc2" %>
+<%@ Register Src="../UIs/right-fix.ascx" TagName="right" TagPrefix="uc3" %>
+<%@ Register Src="../UIs/header.ascx" TagName="header" TagPrefix="uc4" %>
+<%@ Register Src="../UIs/topmenu.ascx" TagName="topmenu" TagPrefix="uc5" %>
+<%@ Register Src="../UIs/Ads-bottom.ascx" TagName="Ads" TagPrefix="uc6" %>
+<%@ Register Src="../UIs/footer.ascx" TagName="footer" TagPrefix="uc7" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi">
+<head runat="server">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title></title>
+<asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+<link href="../vi-vn/modalbox/login_popup.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../vi-vn/Styles/template.css" type="text/css" />
+<link rel="stylesheet" href="../vi-vn/Styles/font-awesome.min.css" type="text/css" />
+<!--Main Menu-->
+<link href="../vi-vn/Styles/newheadfooter.css" rel="stylesheet" type="text/css" />
+<!--Nivo Slider Responsive-->
+<link rel="stylesheet" href="../vi-vn/Styles/nivo-slider.css" type="text/css" media="screen" />
+<meta name="google-site-verification" content="Tal9_rgUcOU4ssBbyfUqvQ85_P404SB6v9VLqsicaMQ" />
+<link rel="alternate" hreflang="vi-vn" href="alternateURL">
+</head>
+<body>
+<form id="form1" runat="server">
+ <script type="text/javascript" src="../vi-vn/Scripts/jquery-1.8.3.min.js"></script> 
+ <!--Left Fix Side--> 
+ <script>
+//<![CDATA[
+//            $(function () {
+//                var sticky_navigation_offset_top = $('#left_fix_side').offset().top;
+//                var sticky_navigation = function () {
+//                    var scroll_top = $(window).scrollTop();
+//                    if (scroll_top > sticky_navigation_offset_top) {
+//                        $('#left_fix_side').css({ 'position': 'fixed', 'top': 40 });
+//                    } else {
+//                        $('#left_fix_side').css({ 'position': 'fixed', 'top': 170 });
+//                    }
+//                };
+//
+//                sticky_navigation();
+//
+//                $(window).scroll(function () {
+//                    sticky_navigation();
+//                });
+//            }); // JavaScript Document
+	</script>
+ <div>
+  <div id="top_page">
+   <uc1:top ID="top1" runat="server" />
+  </div>
+  <div class="right_fixed">
+   <uc2:support ID="support1" runat="server" />
+  </div>
+  <!--end Right Fix Side--> 
+  <!--#begin Header-->
+  <div id="header">
+   <uc4:header ID="header1" runat="server" />
+  </div>
+  <!--#end Header--> 
+  <!--Top Main-->
+  <div class="box top_main">
+   <uc5:topmenu ID="topmenu1" runat="server" />
+  </div>
+  <!--End Top Main -->
+  <div class="wrap">
+   <div class="wrap_inner cf"> 
+    <!--Main Content-->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+    <!--End Main Wrap--> 
+    <!--Slide Trade-mark-->
+    <div class="box bgwhite boxviews" >
+     <div id="left_fix_side">
+      <uc3:right ID="right1" runat="server" />
+     </div>
+     <div id="sl_trademark" class="hidden">
+      <ul class="hidden">
+       <div class="tt_popP"></div>
+       <uc6:Ads ID="Ads1" runat="server" />
+      </ul>
+      <a id="prev_trademark" class="prev" href="#">&lt;</a> 
+      <a id="next_trademark" class="next" href="#">&gt;</a> 
+      </div>
+    </div>
+    <!--End Slide Trade-mark-->
+    <div id="footer" class="cf">
+     <uc7:footer ID="footer1" runat="server" />
+    </div>
+    <!--end Footer--> 
+   </div>
+   <!-- End wrap--> 
+   <!--Footer Bottom-->
+   <div id="footer_bottom" class="cf">
+    <div class="wrap">
+     <div id="copyright"> Copyright © 2011-2015 by Thangnhom.Org . All rights reserved. Designed by <a href="http://yeuthietkeweb.com/" target="_blank" style="color: Blue">yeuthietkeweb.com.</a></div>
+     <p>
+      <asp:LinkButton ID="lbchangedevice" runat="server" OnClick="lbchangedevice_Click" ForeColor="Blue">Chuyển sang phiên bản mobile</asp:LinkButton>
+     </p>
+    </div>
+   </div>
+   <!--end Footer Bottom--> 
+  </div>
+  <!-- back to top --> 
+  <script type="text/javascript" src="../vi-vn/Scripts/scrolltopcontrol.js"></script>
+  <div id="toTop"> </div>
+  <!--Slide Banner--> 
+  <script type="text/javascript" src="../vi-vn/Scripts/jquery.nivo.slider.pack.js"></script> 
+  <!--Carousel Assets--> 
+  <script type="text/javascript" src="../vi-vn/Scripts/jquery.carouFredSel-5.6.0-packed.js"></script> 
+  <script type="text/javascript" src="../vi-vn/Scripts/all_scripts.js"></script> 
+ </div>
+ <script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script> 
+ <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-63537231-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</form>
+</body>
+</html>

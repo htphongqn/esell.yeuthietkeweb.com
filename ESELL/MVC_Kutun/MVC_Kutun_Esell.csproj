@@ -1,0 +1,1488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07E88515-C7D4-4D49-A7E9-96628889E2CD}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVC_Kutun</RootNamespace>
+    <AssemblyName>MVC_Kutun</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60919.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentArt.Web.UI, Version=2010.1.2637.35, Culture=neutral, PublicKeyToken=9bc9f846553156bb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\ComponentArt.Web.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=2.0.0.9, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MSCaptcha, Version=4.0.4250.31585, Culture=neutral, PublicKeyToken=b9ff12f28cdcf412, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\MSCaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="vpro.functions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\vpro.functions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\ComponentArt.Web.UI.dll" />
+    <Content Include="bin\Intelligencia.UrlRewriter.dll" />
+    <Content Include="bin\MSCaptcha.dll" />
+    <Content Include="bin\vpro.functions.dll" />
+    <Content Include="Calendar\calendarStyle.css" />
+    <Content Include="Calendar\images\btn_calendar.gif" />
+    <Content Include="Calendar\images\cal_nextMonth.gif" />
+    <Content Include="Calendar\images\cal_prevMonth.gif" />
+    <Content Include="Calendar\pickerAndCalendar.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="MOBILE\UIs\cart.ascx" />
+    <Content Include="MOBILE\UIs\cartinfoFinal.ascx" />
+    <Content Include="MOBILE\UIs\cate-bottom.ascx" />
+    <Content Include="MOBILE\UIs\list-product-shop.ascx" />
+    <Content Include="MOBILE\UIs\footer-menu.ascx" />
+    <Content Include="MOBILE\UIs\footer.ascx" />
+    <Content Include="MOBILE\UIs\header.ascx" />
+    <Content Include="MOBILE\UIs\hispayment.ascx" />
+    <Content Include="MOBILE\UIs\Hispayment_Partner.ascx" />
+    <Content Include="MOBILE\UIs\hotline.ascx" />
+    <Content Include="MOBILE\UIs\list-news.ascx" />
+    <Content Include="MOBILE\UIs\list-product.ascx" />
+    <Content Include="MOBILE\UIs\main.ascx" />
+    <Content Include="MOBILE\UIs\menu.ascx" />
+    <Content Include="MOBILE\UIs\news-details.ascx" />
+    <Content Include="MOBILE\UIs\path.ascx" />
+    <Content Include="MOBILE\UIs\Payment-giaohangtannoi.ascx" />
+    <Content Include="MOBILE\UIs\ProBuy.ascx" />
+    <Content Include="MOBILE\UIs\product-detail.ascx" />
+    <Content Include="MOBILE\UIs\ProQuantam.ascx" />
+    <Content Include="MOBILE\UIs\search-box.ascx" />
+    <Content Include="MOBILE\UIs\search-result.ascx" />
+    <Content Include="MOBILE\UIs\seo-sologan.ascx" />
+    <Content Include="MOBILE\UIs\seo_cate.ascx" />
+    <Content Include="MOBILE\UIs\slider.ascx" />
+    <Content Include="MOBILE\vi-vn\Addtocart.aspx" />
+    <Content Include="MOBILE\vi-vn\Ajax-morelistpro.aspx" />
+    <Content Include="MOBILE\vi-vn\Ajax\Ajaxlike.js" />
+    <Content Include="MOBILE\vi-vn\cart-result.aspx" />
+    <Content Include="MOBILE\vi-vn\Change-pass.aspx" />
+    <Content Include="MOBILE\vi-vn\Check-order.aspx" />
+    <Content Include="MOBILE\vi-vn\CImage.aspx" />
+    <Content Include="MOBILE\vi-vn\Contact.aspx" />
+    <Content Include="MOBILE\vi-vn\Forget-pass.aspx" />
+    <Content Include="MOBILE\vi-vn\Images\7day.png" />
+    <Content Include="MOBILE\vi-vn\Images\address_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\ajax-loader.gif" />
+    <Content Include="MOBILE\vi-vn\Images\arrow_l.png" />
+    <Content Include="MOBILE\vi-vn\Images\arr_active.png" />
+    <Content Include="MOBILE\vi-vn\Images\arr_l.png" />
+    <Content Include="MOBILE\vi-vn\Images\arr_l1.png" />
+    <Content Include="MOBILE\vi-vn\Images\arr_orange.png" />
+    <Content Include="MOBILE\vi-vn\Images\arr_search.png" />
+    <Content Include="MOBILE\vi-vn\Images\back_to_top.png" />
+    <Content Include="MOBILE\vi-vn\Images\bg_b_b1.png" />
+    <Content Include="MOBILE\vi-vn\Images\bg_b_b2.png" />
+    <Content Include="MOBILE\vi-vn\Images\bg_b_login.png" />
+    <Content Include="MOBILE\vi-vn\Images\bg_li_f.png" />
+    <Content Include="MOBILE\vi-vn\Images\Capcha.gif" />
+    <Content Include="MOBILE\vi-vn\Images\CaptchaImage.axd.jpg" />
+    <Content Include="MOBILE\vi-vn\Images\cart_btn.png" />
+    <Content Include="MOBILE\vi-vn\Images\cart_head_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\cate_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\certification.png" />
+    <Content Include="MOBILE\vi-vn\Images\circle_arr.png" />
+    <Content Include="MOBILE\vi-vn\Images\close_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\conHang.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancybox-x.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancybox-y.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancybox.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_close.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_loading.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_nav_left.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_nav_right.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_e.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_n.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_ne.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_nw.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_s.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_se.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_sw.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_shadow_w.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_title_left.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_title_main.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_title_over.png" />
+    <Content Include="MOBILE\vi-vn\Images\fancybox\fancy_title_right.png" />
+    <Content Include="MOBILE\vi-vn\Images\faq.png" />
+    <Content Include="MOBILE\vi-vn\Images\faq1.png" />
+    <Content Include="MOBILE\vi-vn\Images\fonts\flexslider-icon.svg" />
+    <Content Include="MOBILE\vi-vn\Images\fonts\fontawesome-webfont.svg" />
+    <Content Include="MOBILE\vi-vn\Images\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="MOBILE\vi-vn\Images\fonts\opensans-regular-webfont.svg" />
+    <Content Include="MOBILE\vi-vn\Images\fonts\robotocondensed-bold-webfont.svg" />
+    <Content Include="MOBILE\vi-vn\Images\fonts\robotocondensed-regular-webfont.svg" />
+    <Content Include="MOBILE\vi-vn\Images\greenBg.gif" />
+    <Content Include="MOBILE\vi-vn\Images\green_check.png" />
+    <Content Include="MOBILE\vi-vn\Images\hotline_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\icons.png" />
+    <Content Include="MOBILE\vi-vn\Images\icon_giaohang.png" />
+    <Content Include="MOBILE\vi-vn\Images\icon_list_video.gif" />
+    <Content Include="MOBILE\vi-vn\Images\icon_love.png" />
+    <Content Include="MOBILE\vi-vn\Images\icon_order.png" />
+    <Content Include="MOBILE\vi-vn\Images\input-repeat.png" />
+    <Content Include="MOBILE\vi-vn\Images\invalid.png" />
+    <Content Include="MOBILE\vi-vn\Images\key_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\likeProduct.jpg" />
+    <Content Include="MOBILE\vi-vn\Images\logo.jpg" />
+    <Content Include="MOBILE\vi-vn\Images\logo.png" />
+    <Content Include="MOBILE\vi-vn\Images\noavatar.png" />
+    <Content Include="MOBILE\vi-vn\Images\remove.png" />
+    <Content Include="MOBILE\vi-vn\Images\search_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\social_icon.png" />
+    <Content Include="MOBILE\vi-vn\Images\social_network.jpg" />
+    <Content Include="MOBILE\vi-vn\Images\social_network1.jpg" />
+    <Content Include="MOBILE\vi-vn\Images\sp.png" />
+    <Content Include="MOBILE\vi-vn\Images\sprites_v2014.gif" />
+    <Content Include="MOBILE\vi-vn\Images\succe.jpg" />
+    <Content Include="MOBILE\vi-vn\Images\thanhToan\master.png" />
+    <Content Include="MOBILE\vi-vn\Images\thanhToan\techcom.png" />
+    <Content Include="MOBILE\vi-vn\Images\thanhToan\tp.png" />
+    <Content Include="MOBILE\vi-vn\Images\thanhToan\vietcom.png" />
+    <Content Include="MOBILE\vi-vn\Images\thanhToan\viettin.png" />
+    <Content Include="MOBILE\vi-vn\Images\thanhToan\visa.png" />
+    <Content Include="MOBILE\vi-vn\Images\themes.gif" />
+    <Content Include="MOBILE\vi-vn\Images\toolbar.png" />
+    <Content Include="MOBILE\vi-vn\Images\valid.png" />
+    <Content Include="MOBILE\vi-vn\Images\zoom_icon.png" />
+    <Content Include="MOBILE\vi-vn\Order-payment-detail.aspx" />
+    <Content Include="MOBILE\vi-vn\Order-payment.aspx" />
+    <Content Include="MOBILE\vi-vn\Payment-finish.aspx" />
+    <Content Include="MOBILE\vi-vn\Payment-step1.aspx" />
+    <Content Include="MOBILE\vi-vn\Payment-step2.aspx" />
+    <Content Include="MOBILE\vi-vn\Payment-step3.aspx" />
+    <Content Include="MOBILE\vi-vn\Payment-step4.aspx" />
+    <Content Include="MOBILE\vi-vn\ProductLove.aspx" />
+    <Content Include="MOBILE\vi-vn\ProductSee.aspx" />
+    <Content Include="MOBILE\vi-vn\Register-member.aspx" />
+    <Content Include="MOBILE\vi-vn\Register_Partner.aspx" />
+    <Content Include="MOBILE\vi-vn\Scripts\all_scripts.js" />
+    <Content Include="MOBILE\vi-vn\Scripts\BeatPicker.min.js" />
+    <Content Include="MOBILE\vi-vn\Scripts\idangerous.swiper.min.js" />
+    <Content Include="MOBILE\vi-vn\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="MOBILE\vi-vn\Scripts\jquery-noconflict.js" />
+    <Content Include="MOBILE\vi-vn\Scripts\responsiveslides.min.js" />
+    <Content Include="MOBILE\vi-vn\Scripts\scrolltopcontrol.js" />
+    <Content Include="MOBILE\vi-vn\Sign-in.aspx" />
+    <Content Include="MOBILE\vi-vn\Styles\base.css" />
+    <Content Include="MOBILE\vi-vn\Styles\BeatPicker.min.css" />
+    <Content Include="MOBILE\vi-vn\Styles\font-awesome.min.css" />
+    <Content Include="MOBILE\vi-vn\Styles\head_menu.css" />
+    <Content Include="MOBILE\vi-vn\Styles\icon.css" />
+    <Content Include="MOBILE\vi-vn\Styles\idangerous.swiper.css" />
+    <Content Include="MOBILE\vi-vn\Styles\layout.css" />
+    <Content Include="MOBILE\vi-vn\Styles\main_menu.css" />
+    <Content Include="MOBILE\vi-vn\Styles\menu_bottom.css" />
+    <Content Include="MOBILE\vi-vn\Styles\menu_level.css" />
+    <Content Include="MOBILE\vi-vn\Styles\nav_menu.css" />
+    <Content Include="MOBILE\vi-vn\Styles\responsiveslides.css" />
+    <Content Include="MOBILE\vi-vn\Styles\site_user_vip.css" />
+    <Content Include="MOBILE\vi-vn\Styles\skeleton.css" />
+    <Content Include="MOBILE\vi-vn\Styles\template.css" />
+    <Content Include="MOBILE\vi-vn\support.aspx" />
+    <Content Include="MOBILE\vi-vn\User-address.aspx" />
+    <Content Include="MOBILE\vi-vn\User-manager.aspx" />
+    <Content Include="MOBILE\vi-vn\userinfo.aspx" />
+    <Content Include="MOBILE\vi-vn\ViewmoreAjax.asmx" />
+    <Content Include="RunScript.aspx" />
+    <Content Include="UIs\Ads-bottom.ascx" />
+    <Content Include="UIs\Ads-left-menu.ascx" />
+    <Content Include="UIs\Ads-news-main.ascx" />
+    <Content Include="UIs\Ads-right-slider.ascx" />
+    <Content Include="UIs\Ads-right-top.ascx" />
+    <Content Include="UIs\Ads-rightpro.ascx" />
+    <Content Include="UIs\Ads-top.ascx" />
+    <Content Include="UIs\Ads_toplistpro.ascx" />
+    <Content Include="UIs\cart.ascx" />
+    <Content Include="UIs\cartInfoFinal.ascx" />
+    <Content Include="UIs\checkorderPayment.ascx" />
+    <Content Include="UIs\left-menu-shop.ascx" />
+    <Content Include="UIs\list-product-shop.ascx" />
+    <Content Include="UIs\foot-menubottom.ascx" />
+    <Content Include="UIs\footer.ascx" />
+    <Content Include="UIs\forgetpass.ascx" />
+    <Content Include="UIs\header-search.ascx" />
+    <Content Include="UIs\header.ascx" />
+    <Content Include="UIs\history-payment.ascx" />
+    <Content Include="UIs\HistPayment_Partner.ascx" />
+    <Content Include="UIs\hotlinefix.ascx" />
+    <Content Include="UIs\left-menu-news.ascx" />
+    <Content Include="UIs\left-menu.ascx" />
+    <Content Include="UIs\leftmenu-userinfo.ascx" />
+    <Content Include="UIs\list-product.ascx" />
+    <Content Include="UIs\listnews.ascx" />
+    <Content Include="UIs\main.ascx" />
+    <Content Include="UIs\menu.ascx" />
+    <Content Include="UIs\news-details.ascx" />
+    <Content Include="UIs\Order-news.ascx" />
+    <Content Include="UIs\path.ascx" />
+    <Content Include="UIs\Payment-giaohangtannoi.ascx" />
+    <Content Include="UIs\Payment-home.ascx" />
+    <Content Include="UIs\pro-giasoc.ascx" />
+    <Content Include="UIs\product-details.ascx" />
+    <Content Include="UIs\product-top.ascx" />
+    <Content Include="UIs\proHighlights.ascx" />
+    <Content Include="UIs\right-fix.ascx" />
+    <Content Include="UIs\right-menu-news.ascx" />
+    <Content Include="UIs\right.ascx" />
+    <Content Include="UIs\search-result.ascx" />
+    <Content Include="UIs\Seo-cate.ascx" />
+    <Content Include="UIs\Seo-sologan.ascx" />
+    <Content Include="UIs\slider-doitac.ascx" />
+    <Content Include="UIs\slider.ascx" />
+    <Content Include="UIs\support.ascx" />
+    <Content Include="UIs\toolbar.ascx" />
+    <Content Include="UIs\top-page.ascx" />
+    <Content Include="UIs\topmain.ascx" />
+    <Content Include="UIs\topmenu.ascx" />
+    <Content Include="UIs\ucAddressPayment.ascx" />
+    <Content Include="UIs\Ucslider-ads.ascx" />
+    <Content Include="vi-vn\Addtocart.aspx" />
+    <Content Include="vi-vn\Ajax-comment.aspx" />
+    <Content Include="vi-vn\Ajax-customer.aspx" />
+    <Content Include="vi-vn\Ajaxallservice.asmx" />
+    <Content Include="vi-vn\Ajax\Addtocart.js" />
+    <Content Include="vi-vn\Ajax\Ajax-prohighlight.js" />
+    <Content Include="vi-vn\Ajax\Ajax-scroll.js" />
+    <Content Include="vi-vn\Ajax\Ajaxcate.js" />
+    <Content Include="vi-vn\Ajax\Ajaxcomplete.js" />
+    <Content Include="vi-vn\Ajax\Ajaxlike.js" />
+    <Content Include="vi-vn\Ajax\Ajaxsosanh.js" />
+    <Content Include="vi-vn\Ajax\Checkvalid.js" />
+    <Content Include="vi-vn\Ajax\Email.js" />
+    <Content Include="vi-vn\Ajax\login.js" />
+    <Content Include="vi-vn\cart-result.aspx" />
+    <Content Include="vi-vn\Change-pass.aspx" />
+    <Content Include="vi-vn\Check-order.aspx" />
+    <Content Include="vi-vn\CImage.aspx" />
+    <Content Include="vi-vn\Complete-Ajax.asmx" />
+    <Content Include="vi-vn\Complete\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="vi-vn\Complete\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="vi-vn\ConfimEmail.aspx" />
+    <Content Include="vi-vn\contact.aspx" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-icons_222222_256x240.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="vi-vn\Datepicker\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="vi-vn\Datepicker\jquery-ui.min.css" />
+    <Content Include="vi-vn\Datepicker\jquery-ui.min.js" />
+    <Content Include="vi-vn\Errors404.aspx" />
+    <Content Include="vi-vn\Favorite-product.aspx" />
+    <Content Include="vi-vn\feedback.aspx" />
+    <Content Include="vi-vn\Home.aspx" />
+    <Content Include="vi-vn\Images\addtocart_btn.png" />
+    <Content Include="vi-vn\Images\arr_cate.png" />
+    <Content Include="vi-vn\Images\arr_cate_child.gif" />
+    <Content Include="vi-vn\Images\arr_check.png" />
+    <Content Include="vi-vn\Images\arr_l.png" />
+    <Content Include="vi-vn\Images\arr_orange.png" />
+    <Content Include="vi-vn\Images\back_to_top.jpg" />
+    <Content Include="vi-vn\Images\blank.gif" />
+    <Content Include="vi-vn\Images\bl_arr_down.png" />
+    <Content Include="vi-vn\Images\btn-close.png" />
+    <Content Include="vi-vn\Images\btn_web.gif" />
+    <Content Include="vi-vn\Images\calendar_icon.jpg" />
+    <Content Include="vi-vn\Images\CaptchaImage.axd.jpg" />
+    <Content Include="vi-vn\Images\cart_icon.png" />
+    <Content Include="vi-vn\Images\fancybox_loading%402x.gif" />
+    <Content Include="vi-vn\Images\fancybox_loading.gif" />
+    <Content Include="vi-vn\Images\fancybox_overlay.png" />
+    <Content Include="vi-vn\Images\fancybox_sprite%402x.png" />
+    <Content Include="vi-vn\Images\fancybox_sprite.png" />
+    <Content Include="vi-vn\Images\gr_arr_l.png" />
+    <Content Include="vi-vn\Images\icons.png" />
+    <Content Include="vi-vn\Images\icon_order.png" />
+    <Content Include="vi-vn\Images\like_P.jpg" />
+    <Content Include="vi-vn\Images\loader-bar.gif" />
+    <Content Include="vi-vn\Images\logo.png" />
+    <Content Include="vi-vn\Images\mail_icon_spp.png" />
+    <Content Include="vi-vn\Images\noavatar.png" />
+    <Content Include="vi-vn\Images\popup-close.png" />
+    <Content Include="vi-vn\Images\p_close.gif" />
+    <Content Include="vi-vn\Images\quytrinh-background.gif" />
+    <Content Include="vi-vn\Images\quytrinh-background.png" />
+    <Content Include="vi-vn\Images\Send.png" />
+    <Content Include="vi-vn\Images\slide_ctrl.png" />
+    <Content Include="vi-vn\Images\social_icon.png" />
+    <Content Include="vi-vn\Images\social_network.jpg" />
+    <Content Include="vi-vn\Images\social_network1.jpg" />
+    <Content Include="vi-vn\Images\split_space.gif" />
+    <Content Include="vi-vn\Images\sprites_icon\address_icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate1.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate2.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate3.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate4.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate5.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate6.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate7.png" />
+    <Content Include="vi-vn\Images\sprites_icon\cate8.png" />
+    <Content Include="vi-vn\Images\sprites_icon\home_icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\hotline_icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\hotline_spp.png" />
+    <Content Include="vi-vn\Images\sprites_icon\list-icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\list-icon1.png" />
+    <Content Include="vi-vn\Images\sprites_icon\mail_icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\menu_border_icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\tech_icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\time_work_icon.png" />
+    <Content Include="vi-vn\Images\sprites_icon\view_icon.png" />
+    <Content Include="vi-vn\Images\step_icons.png" />
+    <Content Include="vi-vn\Images\step_processBg.gif" />
+    <Content Include="vi-vn\Images\step_processBg_active.gif" />
+    <Content Include="vi-vn\Images\succe.jpg" />
+    <Content Include="vi-vn\Images\success.png" />
+    <Content Include="vi-vn\Images\tab_cateBg.png" />
+    <Content Include="vi-vn\Images\title-line.png" />
+    <Content Include="vi-vn\Images\toolbar.png" />
+    <Content Include="vi-vn\Images\top_mainBg.gif" />
+    <Content Include="vi-vn\Images\white_arr_down.png" />
+    <Content Include="vi-vn\Images\w_arr_cate.png" />
+    <Content Include="vi-vn\Images\w_arr_down.png" />
+    <Content Include="vi-vn\Images\yahoo_icon.png" />
+    <Content Include="vi-vn\Images\zoom_icon.png" />
+    <Content Include="vi-vn\modalbox\all_index.css" />
+    <Content Include="vi-vn\modalbox\login_popup.css" />
+    <Content Include="vi-vn\Order-payment.aspx" />
+    <Content Include="vi-vn\page_default.aspx" />
+    <Content Include="vi-vn\Payment-finish.aspx" />
+    <Content Include="vi-vn\Payment-step1.aspx" />
+    <Content Include="vi-vn\Payment-step2.aspx" />
+    <Content Include="vi-vn\Payment-step3.aspx" />
+    <Content Include="vi-vn\Register-member.aspx" />
+    <Content Include="vi-vn\Register_Partner.aspx" />
+    <Content Include="vi-vn\Scripts\all_scripts.js" />
+    <Content Include="vi-vn\Scripts\BeatPicker.min.js" />
+    <Content Include="vi-vn\Scripts\cloud-zoom.1.0.2.js" />
+    <Content Include="vi-vn\Scripts\jquery-1.8.3.min.js" />
+    <Content Include="vi-vn\Scripts\jquery.carouFredSel-5.6.0-packed.js" />
+    <Content Include="vi-vn\Scripts\jquery.fancybox.js" />
+    <Content Include="vi-vn\Scripts\jquery.nivo.slider.pack.js" />
+    <Content Include="vi-vn\Scripts\jquery.sticky.js" />
+    <Content Include="vi-vn\Scripts\masonry.js" />
+    <Content Include="vi-vn\Scripts\scrolltopcontrol.js" />
+    <Content Include="vi-vn\Styles\arcord_menu.css" />
+    <Content Include="vi-vn\Styles\BeatPicker.min.css" />
+    <Content Include="vi-vn\Styles\cloud-zoom.css" />
+    <Content Include="vi-vn\Styles\contact.css" />
+    <Content Include="vi-vn\Styles\detail_product.css" />
+    <Content Include="vi-vn\Styles\jquery.fancybox.css" />
+    <Content Include="vi-vn\Styles\newheadfooter.css" />
+    <Content Include="vi-vn\Styles\nivo-slider.css" />
+    <Content Include="vi-vn\Styles\process_payment.css" />
+    <Content Include="vi-vn\Styles\template.css" />
+    <Content Include="vi-vn\Styles\toolbar.css" />
+    <Content Include="vi-vn\User-address.aspx" />
+    <Content Include="vi-vn\User-manager.aspx" />
+    <Content Include="vi-vn\userinfo.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Calendar\pickerAndCalendar.ascx.cs">
+      <DependentUpon>pickerAndCalendar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calendar\pickerAndCalendar.ascx.designer.cs">
+      <DependentUpon>pickerAndCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Checkcookie.cs" />
+    <Compile Include="Components\clsFormat.cs" />
+    <Compile Include="Components\Getcookie.cs" />
+    <Compile Include="Components\Pageindex_chage.cs" />
+    <Compile Include="Components\RandomImage.cs" />
+    <Compile Include="Components\SendMail.cs" />
+    <Compile Include="Components\setCookieDevice.cs" />
+    <Compile Include="Components\setCookieLike.cs" />
+    <Compile Include="Components\setCookiePartner.cs" />
+    <Compile Include="Components\setCookieRating.cs" />
+    <Compile Include="Components\setCookieSignin.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Master-payment.Master.cs">
+      <DependentUpon>Master-payment.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Master-payment.Master.designer.cs">
+      <DependentUpon>Master-payment.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\Master\Master.Master.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\Master\Master.Master.designer.cs">
+      <DependentUpon>Master.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\cart.ascx.cs">
+      <DependentUpon>cart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\cart.ascx.designer.cs">
+      <DependentUpon>cart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\cartinfoFinal.ascx.cs">
+      <DependentUpon>cartinfoFinal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\cartinfoFinal.ascx.designer.cs">
+      <DependentUpon>cartinfoFinal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\cate-bottom.ascx.cs">
+      <DependentUpon>cate-bottom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\cate-bottom.ascx.designer.cs">
+      <DependentUpon>cate-bottom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\list-product-shop.ascx.cs">
+      <DependentUpon>list-product-shop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\list-product-shop.ascx.designer.cs">
+      <DependentUpon>list-product-shop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\footer-menu.ascx.cs">
+      <DependentUpon>footer-menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\footer-menu.ascx.designer.cs">
+      <DependentUpon>footer-menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\hispayment.ascx.cs">
+      <DependentUpon>hispayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\hispayment.ascx.designer.cs">
+      <DependentUpon>hispayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\Hispayment_Partner.ascx.cs">
+      <DependentUpon>Hispayment_Partner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\Hispayment_Partner.ascx.designer.cs">
+      <DependentUpon>Hispayment_Partner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\hotline.ascx.cs">
+      <DependentUpon>hotline.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\hotline.ascx.designer.cs">
+      <DependentUpon>hotline.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\list-news.ascx.cs">
+      <DependentUpon>list-news.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\list-news.ascx.designer.cs">
+      <DependentUpon>list-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\list-product.ascx.cs">
+      <DependentUpon>list-product.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\list-product.ascx.designer.cs">
+      <DependentUpon>list-product.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\main.ascx.cs">
+      <DependentUpon>main.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\main.ascx.designer.cs">
+      <DependentUpon>main.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\news-details.ascx.cs">
+      <DependentUpon>news-details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\news-details.ascx.designer.cs">
+      <DependentUpon>news-details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\path.ascx.cs">
+      <DependentUpon>path.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\path.ascx.designer.cs">
+      <DependentUpon>path.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\Payment-giaohangtannoi.ascx.cs">
+      <DependentUpon>Payment-giaohangtannoi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\Payment-giaohangtannoi.ascx.designer.cs">
+      <DependentUpon>Payment-giaohangtannoi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\ProBuy.ascx.cs">
+      <DependentUpon>ProBuy.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\ProBuy.ascx.designer.cs">
+      <DependentUpon>ProBuy.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\product-detail.ascx.cs">
+      <DependentUpon>product-detail.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\product-detail.ascx.designer.cs">
+      <DependentUpon>product-detail.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\ProQuantam.ascx.cs">
+      <DependentUpon>ProQuantam.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\ProQuantam.ascx.designer.cs">
+      <DependentUpon>ProQuantam.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\search-box.ascx.cs">
+      <DependentUpon>search-box.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\search-box.ascx.designer.cs">
+      <DependentUpon>search-box.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\search-result.ascx.cs">
+      <DependentUpon>search-result.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\search-result.ascx.designer.cs">
+      <DependentUpon>search-result.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\seo-sologan.ascx.cs">
+      <DependentUpon>seo-sologan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\seo-sologan.ascx.designer.cs">
+      <DependentUpon>seo-sologan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\seo_cate.ascx.cs">
+      <DependentUpon>seo_cate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\seo_cate.ascx.designer.cs">
+      <DependentUpon>seo_cate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\UIs\slider.ascx.cs">
+      <DependentUpon>slider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\UIs\slider.ascx.designer.cs">
+      <DependentUpon>slider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Addtocart.aspx.cs">
+      <DependentUpon>Addtocart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Addtocart.aspx.designer.cs">
+      <DependentUpon>Addtocart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Ajax-morelistpro.aspx.cs">
+      <DependentUpon>Ajax-morelistpro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Ajax-morelistpro.aspx.designer.cs">
+      <DependentUpon>Ajax-morelistpro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\cart-result.aspx.cs">
+      <DependentUpon>cart-result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\cart-result.aspx.designer.cs">
+      <DependentUpon>cart-result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Change-pass.aspx.cs">
+      <DependentUpon>Change-pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Change-pass.aspx.designer.cs">
+      <DependentUpon>Change-pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Check-order.aspx.cs">
+      <DependentUpon>Check-order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Check-order.aspx.designer.cs">
+      <DependentUpon>Check-order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\CImage.aspx.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\CImage.aspx.designer.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Forget-pass.aspx.cs">
+      <DependentUpon>Forget-pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Forget-pass.aspx.designer.cs">
+      <DependentUpon>Forget-pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Order-payment-detail.aspx.cs">
+      <DependentUpon>Order-payment-detail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Order-payment-detail.aspx.designer.cs">
+      <DependentUpon>Order-payment-detail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Order-payment.aspx.cs">
+      <DependentUpon>Order-payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Order-payment.aspx.designer.cs">
+      <DependentUpon>Order-payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-finish.aspx.cs">
+      <DependentUpon>Payment-finish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-finish.aspx.designer.cs">
+      <DependentUpon>Payment-finish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step1.aspx.cs">
+      <DependentUpon>Payment-step1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step1.aspx.designer.cs">
+      <DependentUpon>Payment-step1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step2.aspx.cs">
+      <DependentUpon>Payment-step2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step2.aspx.designer.cs">
+      <DependentUpon>Payment-step2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step3.aspx.cs">
+      <DependentUpon>Payment-step3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step3.aspx.designer.cs">
+      <DependentUpon>Payment-step3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step4.aspx.cs">
+      <DependentUpon>Payment-step4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Payment-step4.aspx.designer.cs">
+      <DependentUpon>Payment-step4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\ProductLove.aspx.cs">
+      <DependentUpon>ProductLove.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\ProductLove.aspx.designer.cs">
+      <DependentUpon>ProductLove.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\ProductSee.aspx.cs">
+      <DependentUpon>ProductSee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\ProductSee.aspx.designer.cs">
+      <DependentUpon>ProductSee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Register-member.aspx.cs">
+      <DependentUpon>Register-member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Register-member.aspx.designer.cs">
+      <DependentUpon>Register-member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Register_Partner.aspx.cs">
+      <DependentUpon>Register_Partner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Register_Partner.aspx.designer.cs">
+      <DependentUpon>Register_Partner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Sign-in.aspx.cs">
+      <DependentUpon>Sign-in.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\Sign-in.aspx.designer.cs">
+      <DependentUpon>Sign-in.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\support.aspx.cs">
+      <DependentUpon>support.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\support.aspx.designer.cs">
+      <DependentUpon>support.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\User-address.aspx.cs">
+      <DependentUpon>User-address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\User-address.aspx.designer.cs">
+      <DependentUpon>User-address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\User-manager.aspx.cs">
+      <DependentUpon>User-manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\User-manager.aspx.designer.cs">
+      <DependentUpon>User-manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\userinfo.aspx.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\userinfo.aspx.designer.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MOBILE\vi-vn\ViewmoreAjax.asmx.cs">
+      <DependentUpon>ViewmoreAjax.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RunScript.aspx.cs">
+      <DependentUpon>RunScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RunScript.aspx.designer.cs">
+      <DependentUpon>RunScript.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads-bottom.ascx.cs">
+      <DependentUpon>Ads-bottom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads-bottom.ascx.designer.cs">
+      <DependentUpon>Ads-bottom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads-left-menu.ascx.cs">
+      <DependentUpon>Ads-left-menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads-left-menu.ascx.designer.cs">
+      <DependentUpon>Ads-left-menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads-news-main.ascx.cs">
+      <DependentUpon>Ads-news-main.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads-news-main.ascx.designer.cs">
+      <DependentUpon>Ads-news-main.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads-right-slider.ascx.cs">
+      <DependentUpon>Ads-right-slider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads-right-slider.ascx.designer.cs">
+      <DependentUpon>Ads-right-slider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads-right-top.ascx.cs">
+      <DependentUpon>Ads-right-top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads-right-top.ascx.designer.cs">
+      <DependentUpon>Ads-right-top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads-rightpro.ascx.cs">
+      <DependentUpon>Ads-rightpro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads-rightpro.ascx.designer.cs">
+      <DependentUpon>Ads-rightpro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads-top.ascx.cs">
+      <DependentUpon>Ads-top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads-top.ascx.designer.cs">
+      <DependentUpon>Ads-top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ads_toplistpro.ascx.cs">
+      <DependentUpon>Ads_toplistpro.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ads_toplistpro.ascx.designer.cs">
+      <DependentUpon>Ads_toplistpro.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\cart.ascx.cs">
+      <DependentUpon>cart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\cart.ascx.designer.cs">
+      <DependentUpon>cart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\cartInfoFinal.ascx.cs">
+      <DependentUpon>cartInfoFinal.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\cartInfoFinal.ascx.designer.cs">
+      <DependentUpon>cartInfoFinal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\checkorderPayment.ascx.cs">
+      <DependentUpon>checkorderPayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\checkorderPayment.ascx.designer.cs">
+      <DependentUpon>checkorderPayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\left-menu-shop.ascx.cs">
+      <DependentUpon>left-menu-shop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\left-menu-shop.ascx.designer.cs">
+      <DependentUpon>left-menu-shop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\list-product-shop.ascx.cs">
+      <DependentUpon>list-product-shop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\list-product-shop.ascx.designer.cs">
+      <DependentUpon>list-product-shop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\foot-menubottom.ascx.cs">
+      <DependentUpon>foot-menubottom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\foot-menubottom.ascx.designer.cs">
+      <DependentUpon>foot-menubottom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\forgetpass.ascx.cs">
+      <DependentUpon>forgetpass.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\forgetpass.ascx.designer.cs">
+      <DependentUpon>forgetpass.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\header-search.ascx.cs">
+      <DependentUpon>header-search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\header-search.ascx.designer.cs">
+      <DependentUpon>header-search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\header.ascx.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\header.ascx.designer.cs">
+      <DependentUpon>header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\history-payment.ascx.cs">
+      <DependentUpon>history-payment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\History-payment.ascx.designer.cs">
+      <DependentUpon>history-payment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\HistPayment_Partner.ascx.cs">
+      <DependentUpon>HistPayment_Partner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\HistPayment_Partner.ascx.designer.cs">
+      <DependentUpon>HistPayment_Partner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\hotlinefix.ascx.cs">
+      <DependentUpon>hotlinefix.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\hotlinefix.ascx.designer.cs">
+      <DependentUpon>hotlinefix.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\left-menu-news.ascx.cs">
+      <DependentUpon>left-menu-news.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\left-menu-news.ascx.designer.cs">
+      <DependentUpon>left-menu-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\left-menu.ascx.cs">
+      <DependentUpon>left-menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\left-menu.ascx.designer.cs">
+      <DependentUpon>left-menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\leftmenu-userinfo.ascx.cs">
+      <DependentUpon>leftmenu-userinfo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\leftmenu-userinfo.ascx.designer.cs">
+      <DependentUpon>leftmenu-userinfo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\list-product.ascx.cs">
+      <DependentUpon>list-product.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\list-product.ascx.designer.cs">
+      <DependentUpon>list-product.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\listnews.ascx.cs">
+      <DependentUpon>listnews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\listnews.ascx.designer.cs">
+      <DependentUpon>listnews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\main.ascx.cs">
+      <DependentUpon>main.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\main.ascx.designer.cs">
+      <DependentUpon>main.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\menu.ascx.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\menu.ascx.designer.cs">
+      <DependentUpon>menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\news-details.ascx.cs">
+      <DependentUpon>news-details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\news-details.ascx.designer.cs">
+      <DependentUpon>news-details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Order-news.ascx.cs">
+      <DependentUpon>Order-news.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Order-news.ascx.designer.cs">
+      <DependentUpon>Order-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\path.ascx.cs">
+      <DependentUpon>path.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\path.ascx.designer.cs">
+      <DependentUpon>path.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Payment-giaohangtannoi.ascx.cs">
+      <DependentUpon>Payment-giaohangtannoi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Payment-giaohangtannoi.ascx.designer.cs">
+      <DependentUpon>Payment-giaohangtannoi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Payment-home.ascx.cs">
+      <DependentUpon>Payment-home.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Payment-home.ascx.designer.cs">
+      <DependentUpon>Payment-home.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\pro-giasoc.ascx.cs">
+      <DependentUpon>pro-giasoc.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\pro-giasoc.ascx.designer.cs">
+      <DependentUpon>pro-giasoc.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\product-details.ascx.cs">
+      <DependentUpon>product-details.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\product-details.ascx.designer.cs">
+      <DependentUpon>product-details.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\product-top.ascx.cs">
+      <DependentUpon>product-top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\product-top.ascx.designer.cs">
+      <DependentUpon>product-top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\proHighlights.ascx.cs">
+      <DependentUpon>proHighlights.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\proHighlights.ascx.designer.cs">
+      <DependentUpon>proHighlights.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\right-fix.ascx.cs">
+      <DependentUpon>right-fix.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\right-fix.ascx.designer.cs">
+      <DependentUpon>right-fix.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\right-menu-news.ascx.cs">
+      <DependentUpon>right-menu-news.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\right-menu-news.ascx.designer.cs">
+      <DependentUpon>right-menu-news.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\right.ascx.cs">
+      <DependentUpon>right.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\right.ascx.designer.cs">
+      <DependentUpon>right.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\search-result.ascx.cs">
+      <DependentUpon>search-result.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\search-result.ascx.designer.cs">
+      <DependentUpon>search-result.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Seo-cate.ascx.cs">
+      <DependentUpon>Seo-cate.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Seo-cate.ascx.designer.cs">
+      <DependentUpon>Seo-cate.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Seo-sologan.ascx.cs">
+      <DependentUpon>Seo-sologan.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Seo-sologan.ascx.designer.cs">
+      <DependentUpon>Seo-sologan.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\slider-doitac.ascx.cs">
+      <DependentUpon>slider-doitac.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\slider-doitac.ascx.designer.cs">
+      <DependentUpon>slider-doitac.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\slider.ascx.cs">
+      <DependentUpon>slider.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\slider.ascx.designer.cs">
+      <DependentUpon>slider.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\support.ascx.cs">
+      <DependentUpon>support.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\support.ascx.designer.cs">
+      <DependentUpon>support.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\toolbar.ascx.cs">
+      <DependentUpon>toolbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\toolbar.ascx.designer.cs">
+      <DependentUpon>toolbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\top-page.ascx.cs">
+      <DependentUpon>top-page.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\top-page.ascx.designer.cs">
+      <DependentUpon>top-page.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\topmain.ascx.cs">
+      <DependentUpon>topmain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\topmain.ascx.designer.cs">
+      <DependentUpon>topmain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\topmenu.ascx.cs">
+      <DependentUpon>topmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\topmenu.ascx.designer.cs">
+      <DependentUpon>topmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\ucAddressPayment.ascx.cs">
+      <DependentUpon>ucAddressPayment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\ucAddressPayment.ascx.designer.cs">
+      <DependentUpon>ucAddressPayment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIs\Ucslider-ads.ascx.cs">
+      <DependentUpon>Ucslider-ads.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIs\Ucslider-ads.ascx.designer.cs">
+      <DependentUpon>Ucslider-ads.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Addtocart.aspx.cs">
+      <DependentUpon>Addtocart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Addtocart.aspx.designer.cs">
+      <DependentUpon>Addtocart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Ajax-comment.aspx.cs">
+      <DependentUpon>Ajax-comment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Ajax-comment.aspx.designer.cs">
+      <DependentUpon>Ajax-comment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Ajax-customer.aspx.cs">
+      <DependentUpon>Ajax-customer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Ajax-customer.aspx.designer.cs">
+      <DependentUpon>Ajax-customer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Ajaxallservice.asmx.cs">
+      <DependentUpon>Ajaxallservice.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="vi-vn\cart-result.aspx.cs">
+      <DependentUpon>cart-result.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\cart-result.aspx.designer.cs">
+      <DependentUpon>cart-result.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Change-pass.aspx.cs">
+      <DependentUpon>Change-pass.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Change-pass.aspx.designer.cs">
+      <DependentUpon>Change-pass.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Check-order.aspx.cs">
+      <DependentUpon>Check-order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Check-order.aspx.designer.cs">
+      <DependentUpon>Check-order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\CImage.aspx.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\CImage.aspx.designer.cs">
+      <DependentUpon>CImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Complete-Ajax.asmx.cs">
+      <DependentUpon>Complete-Ajax.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="vi-vn\ConfimEmail.aspx.cs">
+      <DependentUpon>ConfimEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\ConfimEmail.aspx.designer.cs">
+      <DependentUpon>ConfimEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Errors404.aspx.cs">
+      <DependentUpon>Errors404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Errors404.aspx.designer.cs">
+      <DependentUpon>Errors404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Favorite-product.aspx.cs">
+      <DependentUpon>Favorite-product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Favorite-product.aspx.designer.cs">
+      <DependentUpon>Favorite-product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\feedback.aspx.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\feedback.aspx.designer.cs">
+      <DependentUpon>feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Order-payment.aspx.cs">
+      <DependentUpon>Order-payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Order-payment.aspx.designer.cs">
+      <DependentUpon>Order-payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\page_default.aspx.cs">
+      <DependentUpon>page_default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\page_default.aspx.designer.cs">
+      <DependentUpon>page_default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Payment-finish.aspx.cs">
+      <DependentUpon>Payment-finish.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Payment-finish.aspx.designer.cs">
+      <DependentUpon>Payment-finish.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Payment-step1.aspx.cs">
+      <DependentUpon>Payment-step1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Payment-step1.aspx.designer.cs">
+      <DependentUpon>Payment-step1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Payment-step2.aspx.cs">
+      <DependentUpon>Payment-step2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Payment-step2.aspx.designer.cs">
+      <DependentUpon>Payment-step2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Payment-step3.aspx.cs">
+      <DependentUpon>Payment-step3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Payment-step3.aspx.designer.cs">
+      <DependentUpon>Payment-step3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Register-member.aspx.cs">
+      <DependentUpon>Register-member.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Register-member.aspx.designer.cs">
+      <DependentUpon>Register-member.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\Register_Partner.aspx.cs">
+      <DependentUpon>Register_Partner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\Register_Partner.aspx.designer.cs">
+      <DependentUpon>Register_Partner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\User-address.aspx.cs">
+      <DependentUpon>User-address.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\User-address.aspx.designer.cs">
+      <DependentUpon>User-address.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\User-manager.aspx.cs">
+      <DependentUpon>User-manager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\User-manager.aspx.designer.cs">
+      <DependentUpon>User-manager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vi-vn\userinfo.aspx.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vi-vn\userinfo.aspx.designer.cs">
+      <DependentUpon>userinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XLDLRepo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\ComponentArt.UIFramework.lic" />
+    <None Include="Calendar\images\Thumbs.db" />
+    <None Include="Calendar\images\vssver2.scc" />
+    <None Include="Logfiles\Error.log" />
+    <None Include="Logfiles\vssver2.scc" />
+    <Content Include="Master\Master.Master" />
+    <Content Include="Master\Master-payment.Master" />
+    <Content Include="MOBILE\Master\Master.Master" />
+    <None Include="MOBILE\vi-vn\Images\fonts\flexslider-icon.eot" />
+    <None Include="MOBILE\vi-vn\Images\fonts\flexslider-icon.ttf" />
+    <None Include="MOBILE\vi-vn\Images\fonts\flexslider-icon.woff" />
+    <None Include="MOBILE\vi-vn\Images\fonts\fontawesome-webfont.eot" />
+    <None Include="MOBILE\vi-vn\Images\fonts\fontawesome-webfont.ttf" />
+    <None Include="MOBILE\vi-vn\Images\fonts\fontawesome-webfont.woff" />
+    <None Include="MOBILE\vi-vn\Images\fonts\FontAwesome.otf" />
+    <None Include="MOBILE\vi-vn\Images\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="MOBILE\vi-vn\Images\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="MOBILE\vi-vn\Images\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="MOBILE\vi-vn\Images\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="MOBILE\vi-vn\Images\fonts\opensans-regular-webfont.eot" />
+    <None Include="MOBILE\vi-vn\Images\fonts\opensans-regular-webfont.ttf" />
+    <None Include="MOBILE\vi-vn\Images\fonts\opensans-regular-webfont.woff" />
+    <None Include="MOBILE\vi-vn\Images\fonts\robotocondensed-bold-webfont.eot" />
+    <None Include="MOBILE\vi-vn\Images\fonts\robotocondensed-bold-webfont.ttf" />
+    <None Include="MOBILE\vi-vn\Images\fonts\robotocondensed-bold-webfont.woff" />
+    <None Include="MOBILE\vi-vn\Images\fonts\robotocondensed-regular-webfont.eot" />
+    <None Include="MOBILE\vi-vn\Images\fonts\robotocondensed-regular-webfont.ttf" />
+    <None Include="MOBILE\vi-vn\Images\fonts\robotocondensed-regular-webfont.woff" />
+    <None Include="vi-vn\Images\sprites_icon\Thumbs.db" />
+    <None Include="vi-vn\Images\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{CE1DABDD-1283-4F83-98FB-AFF7BBFAFFB1}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{A559BB6D-EC09-4E9B-88C3-40893DF23721}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>17822</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

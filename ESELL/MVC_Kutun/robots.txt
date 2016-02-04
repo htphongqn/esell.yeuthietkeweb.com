@@ -1,0 +1,7 @@
+# robots.txt
+User-agent: *
+Sitemap: http://esell.vn/sitemap.xml
+Disallow: /aspnet_client/
+Disallow: /bin/
+Disallow: /cPanel/
+Disallow: /Logfiles/
